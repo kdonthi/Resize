@@ -11,3 +11,5 @@ Compile the file using ```gcc -o resize resize.c``` and then compile it with thr
 The executable should be run in a format like this: ```./resize 2 small.bmp large.bmp```.
 
 When compressing an image, I unfortunately cannot keep all the original colors if the picture is not uniform to begin with - I skip pixels vertically and horizontally depending the factor given. For increasing the size of images, I do the opposite and multiply each pixel horizontally and vertically by the amount of the factor (and can keep all the colors of the original image.)
+
+I have created a file with comments called ```resizewcomments.c``` if you want a better idea of what is going on.
